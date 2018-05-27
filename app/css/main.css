@@ -183,12 +183,19 @@ h6.q-author {
 
 h6.t-date {
   font-size: 9px;
-  color: #9B9B9B; }
+  color: #9B9B9B;
+  text-align: right; }
+
+tr.pmin td {
+  min-height: 32px;
+  padding: 16px 10px !important; }
 
 small.earn-amount {
   font-size: 17px;
   color: #354052;
-  font-weight: 600; }
+  font-weight: 600;
+  text-align: right;
+  display: block; }
 
 label.lab-title {
   font-size: 10px;
