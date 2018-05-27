@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>High Clean</title>
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+  <link href="css/main.css" id="theme" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header card-no-border">
+
+  <div id="main-wrapper">
+    <header class="topbar fixed-top">
+      <nav class="navbar top-navbar navbar-expand-md navbar-light">
+        <!-- ============================================================== -->
+        <!-- Logo -->
+        <!-- ============================================================== -->
+        <div class="navbar-header text-left br-right">
+
+          <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)">
+            <i class="mdi mdi-menu"></i>
+          </a>
+
+          <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)">
+            <i class="ti-menu"></i>
+          </a>
+        </div>
+   
+        <div class="navbar-collapse">
+        
+          <ul class="navbar-nav mr-auto mt-md-0">
+            <li class="nav-item ml-3">
+              <a class="navbar-brand" href="index.html">
+                <b>
+                
+                  <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+
+                </b>
+              
+              </a>
+            </li>
+
+          </ul>
+          <ul class="navbar-nav my-lg-0">
+
+            <!-- ============================================================== -->
+            <!-- Profile -->
+            <!-- ============================================================== -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img src="assets/images/users/1.jpg" alt="user" class="profile-pic" />
+              </a>
+              <div class="dropdown-menu dropdown-menu-right scale-up">
+                <ul class="dropdown-user">
+                  <li>
+                    <div class="dw-user-box">
+                      <div class="u-img">
+                        <img src="assets/images/users/1.jpg" alt="user">
+                      </div>
+                      <div class="u-text">
+                        <h4>Steave Jobs</h4>
+                        <p class="text-muted">varun@gmail.com</p>
+                        <a href="pages-profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-user"></i> My Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-wallet"></i> My Balance</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-email"></i> Inbox</a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-settings"></i> Account Setting</a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-power-off"></i> Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <aside class="left-sidebar">
+      <div class="scroll-sidebar">
+        <nav class="sidebar-nav">
+          <ul id="sidebarnav">
+            <li class="nav-devider"></li>
+            <li>
+              <a class="waves-effect waves-dark" href="#" aria-expanded="false">
+                <i class="mdi mdi-gauge"></i>
+                <span class="hide-menu">Dashboard
+                
+                </span>
+              </a>
+             
+            </li>
+            <li>
+              <a class=" waves-effect waves-dark" href="#" aria-expanded="false">
+                <i class="mdi mdi-bullseye"></i>
+                <span class="hide-menu">Apps</span>
+              </a>
+              
+            </li>
+            <li>
+              <a class="waves-effect waves-dark" href="#" aria-expanded="false">
+                <i class="mdi mdi-email"></i>
+                <span class="hide-menu">Inbox</span>
+              </a>
+
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </aside>
+  
+    <div class="page-wrapper">
+
+      <div class="container-fluid">
+
+        <div class="row page-titles br-radius">
+          <div class="col-md-3 align-self-center">
+            <div class="row text-center">
+              <div class="col-md-12">
+                <div class="quote-t text-left">
+                  Quotes
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <small class="q-small">Total</small>
+                <h3 class="m-b-0 font-light q-total">511</h3>
+
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <small class="q-small">Draft</small>
+                <h3 class="m-b-0 font-light q-draft">31</h3>
+
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <small class="q-small">Raised</small>
+                <h3 class="m-b-0 font-light q-rai">340</h3>
+
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <small class="q-small">Rejected</small>
+                <h3 class="m-b-0 font-light q-rec">17</h3>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="wizard">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="row">
+                            <div class="col-md-3 pr-0">
+                              <div class="first-img">
+                                <img src="assets/images/icon/icn_clients_selected.png" alt="">
+        
+                              </div>
+                              <div class="first-text">
+                                Clients
+                              </div>
+                            </div>
+                            <div class="col-md-9 pr-0">
+                              <div class="row">
+                                <div class="col-md-2">
+                                  <span class="chk-box">
+                                    <input type="checkbox" id="md_checkbox_l1" class="filled-in chk-col-light-green" checked/>
+                                    <label class="text-lable" for="md_checkbox_l1"></label>
+                                  </span>
+                                </div>
+                                <div class="col-md-8 pl-0 pr-0">
+                                  <span class="line-b"></span>
+                                </div>
+                                <div class="col-md-1 pl-0 pr-0">
+                                  <span class="circle-b"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+        
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                              <div class="col-md-3 pr-0">
+                                <div class="first-img">
+                                  <img src="assets/images/icon/icn_sites_selected.png" alt="">
+          
+                                </div>
+                                <div class="first-text">
+                                    Sites
+                                </div>
+                              </div>
+                              <div class="col-md-9 pr-0">
+                                <div class="row">
+                                  <div class="col-md-2">
+                                    <span class="chk-box">
+                                      <input type="checkbox" id="md_checkbox_l1" class="filled-in chk-col-light-green" checked/>
+                                      <label class="text-lable" for="md_checkbox_l1"></label>
+                                    </span>
+                                  </div>
+                                  <div class="col-md-8 pl-0 pr-0">
+                                    <span class="line-b"></span>
+                                  </div>
+                                  <div class="col-md-1 pl-0 pr-0">
+                                    <span class="circle-b"></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+          
+                          </div>
+
+                          <div class="col-md-4">
+                              <div class="row">
+                                <div class="col-md-3 pr-0">
+                                  <div class="first-img">
+                                    <img src="assets/images/icon/icn_services_selected.png" alt="">
+            
+                                  </div>
+                                  <div class="first-text">
+                                      Services
+                                  </div>
+                                </div>
+                                <div class="col-md-9 pr-0">
+                                  <div class="row">
+                                    <div class="col-md-2">
+                                      <span class="chk-box">
+                                        <input type="checkbox" id="md_checkbox_l1" class="filled-in chk-col-light-green" checked/>
+                                        <label class="text-lable" for="md_checkbox_l1"></label>
+                                      </span>
+                                    </div>
+                                    <div class="col-md-8 pl-0 pr-0">
+                                      <span class="line-b"></span>
+                                    </div>
+                                    <div class="col-md-1 pl-0 pr-0">
+                                      <span class="circle-b"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+            
+                            </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="col-md-6 pr-0">
+                          <div class="first-img">
+                            <img src="assets/images/icon/icn_services_buildings.png" alt="">
+    
+                          </div>
+                          <div class="first-text">
+                              Buildings
+                          </div>
+                        </div>
+                        <div class="col-md-6 pr-0">
+                            <span class="chk-box">
+                                <input type="checkbox" id="md_checkbox_l1" class="filled-in chk-col-light-green" checked/>
+                                <label class="text-lable" for="md_checkbox_l1"></label>
+                              </span>
+                        
+                        </div>
+                      </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 align-self-center r-btns">
+
+            <div class="row text-center">
+              <div class="col-md-6">
+                <div class="progress-bar1" data-percent="20" data-duration="1000" data-color="#DADADA,#0071C5"></div>
+                <div class="progress-title">
+                  Progress
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-btn">
+                  <button type="button" class="btn waves-effect waves-light btn-info">Send</button>
+                </div>
+                <div class="outline-btn">
+                  <button type="button" class="btn waves-effect waves-light btn-outline-info">Save Draft</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Row -->
+        <div class="row">
+          <div class="col-lg-3 pr-0">
+            <div class="card">
+
+
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-hover earning-box">
+                    <thead class="mb-5">
+                      <tr>
+                        <th colspan="2" class="rec-quotes">Recent Quotes</th>
+                        <th class="pr-0">
+                          <button type="button" class="btn waves-effect waves-light btn-info add-btn">+ Add New Quote</button>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="round-i">
+                            <img src="assets/images/icon/icn_invc_green.png" alt="user">
+                          </span>
+                        </td>
+                        <td>
+                          <h6 class="q-author">Newtek</h6>
+                          <small class="text-des">Window Cleaning</small>
+                        </td>
+
+                        <td>
+                          <h6 class="t-date">04/23/2018</h6>
+                          <small class="earn-amount"> $ 1497</small>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="round-i">
+                            <img src="assets/images/icon/icn_invc_green.png" alt="user">
+                          </span>
+                        </td>
+                        <td>
+                          <h6 class="q-author">Newtek</h6>
+                          <small class="text-des">Window Cleaning</small>
+                        </td>
+
+                        <td>
+                          <h6 class="t-date">04/23/2018</h6>
+                          <small class="earn-amount"> $ 1497</small>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="round-i">
+                            <img src="assets/images/icon/icn_invc_green.png" alt="user">
+                          </span>
+                        </td>
+                        <td>
+                          <h6 class="q-author">Newtek</h6>
+                          <small class="text-des">Window Cleaning</small>
+                        </td>
+
+                        <td>
+                          <h6 class="t-date">04/23/2018</h6>
+                          <small class="earn-amount"> $ 1497</small>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="round-i">
+                            <img src="assets/images/icon/icn_invc_green.png" alt="user">
+                          </span>
+                        </td>
+                        <td>
+                          <h6 class="q-author">Newtek</h6>
+                          <small class="text-des">Window Cleaning</small>
+                        </td>
+
+                        <td>
+                          <h6 class="t-date">04/23/2018</h6>
+                          <small class="earn-amount"> $ 1497</small>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="round-i">
+                            <img src="assets/images/icon/icn_invc_green.png" alt="user">
+                          </span>
+                        </td>
+                        <td>
+                          <h6 class="q-author">Newtek</h6>
+                          <small class="text-des">Window Cleaning</small>
+                        </td>
+
+                        <td>
+                          <h6 class="t-date">04/23/2018</h6>
+                          <small class="earn-amount"> $ 1497</small>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="round-i">
+                            <img src="assets/images/icon/icn_invc_green.png" alt="user">
+                          </span>
+                        </td>
+                        <td>
+                          <h6 class="q-author">Newtek</h6>
+                          <small class="text-des">Window Cleaning</small>
+                        </td>
+
+                        <td>
+                          <h6 class="t-date">04/23/2018</h6>
+                          <small class="earn-amount"> $ 1497</small>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="round-i">
+                            <img src="assets/images/icon/icn_invc_green.png" alt="user">
+                          </span>
+                        </td>
+                        <td>
+                          <h6 class="q-author">Newtek</h6>
+                          <small class="text-des">Window Cleaning</small>
+                        </td>
+
+                        <td>
+                          <h6 class="t-date">04/23/2018</h6>
+                          <small class="earn-amount"> $ 1497</small>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="round-i">
+                            <img src="assets/images/icon/icn_invc_green.png" alt="user">
+                          </span>
+                        </td>
+                        <td>
+                          <h6 class="q-author">Newtek</h6>
+                          <small class="text-des">Window Cleaning</small>
+                        </td>
+
+                        <td>
+                          <h6 class="t-date">04/23/2018</h6>
+                          <small class="earn-amount"> $ 1497</small>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="round-i">
+                            <img src="assets/images/icon/icn_invc_green.png" alt="user">
+                          </span>
+                        </td>
+                        <td>
+                          <h6 class="q-author">Newtek</h6>
+                          <small class="text-des">Window Cleaning</small>
+                        </td>
+
+                        <td>
+                          <h6 class="t-date">04/23/2018</h6>
+                          <small class="earn-amount"> $ 1497</small>
+                        </td>
+                      </tr>
+
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body form-user">
+
+                <form action="">
+                  <div class="row form-material">
+                    <div class="col-md-5">
+                      <label class="lab-title">Company</label>
+                      <select class="form-control" id="">
+                        <option>Newtek</option>
+                        <option>Newtek</option>
+
+                      </select>
+
+                    </div>
+                    <div class="col-md-2 px-0">
+                      <a href="" class="p-t-40 new-link">Add new</a>
+                    </div>
+                    <div class="col-md-5">
+                      <label class="lab-title">Contact Person</label>
+                      <select class="form-control" id="">
+                        <option>Alice</option>
+                        <option>Alice</option>
+
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="row form-material">
+                    <div class="col-md-5">
+                      <label class="m-t-20 lab-title">Site</label>
+                      <select class="form-control" id="">
+                        <option>San Antonio, Texas</option>
+
+                      </select>
+
+                    </div>
+                    <div class="col-md-2 px-0">
+                      <a href="" class="p-t-40 new-link">Add new</a>
+                    </div>
+                    <div class="col-md-5">
+                      <label class="m-t-20 lab-title">Building</label>
+                      <select class="form-control" id="">
+                        <option>San Antonio, Texas</option>
+
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="row form-material">
+                    <div class="col-md-5">
+                      <label class="m-t-20 lab-title">Title</label>
+                      <input type="text" class="form-control" placeholder="Cleaning and washing Floors for Complete Site" name="" id="">
+
+                    </div>
+                    <div class="col-md-2 px-0">
+                      <a href="" class="p-t-40 new-link">Add new</a>
+                    </div>
+                    <div class="col-md-5">
+                      <label class="m-t-20 lab-title">Quote Date</label>
+                      <input type="date" name="" class="form-control" placeholder="04/23/2018" id="">
+
+                    </div>
+                  </div>
+                </form>
+
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr class="table-th">
+                        <th>Description</th>
+                        <th></th>
+                        <th></th>
+                        <th>Quantity</th>
+                        <th>Price/Unit</th>
+                        <th>Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cleaning floors </td>
+                        <td>
+                          <a href="">Edit</a>
+                        </td>
+                        <td>
+                          <a href="">Details</a>
+                        </td>
+                        <td>1</td>
+                        <td>$499.00</td>
+                        <td>$499.00</td>
+                      </tr>
+                      <tr>
+                        <td>Gutter Cleaning </td>
+                        <td>
+                          <a href="">Edit</a>
+                        </td>
+                        <td>
+                          <a href="">Details</a>
+                        </td>
+                        <td>1</td>
+                        <td>$499.00</td>
+                        <td>$499.00</td>
+                      </tr>
+                      <tr>
+                        <td>Window cleaning</td>
+                        <td>
+                          <a href="">Edit</a>
+                        </td>
+                        <td>
+                          <a href="">Details</a>
+                        </td>
+                        <td>1</td>
+                        <td>$499.00</td>
+                        <td>$499.00</td>
+                      </tr>
+                      <tr>
+                        <td colspan="6">Weekday Amount</td>
+                      </tr>
+                      <tr>
+                        <td colspan="6">Mixed Days Amount </td>
+                      </tr>
+                      <tr>
+                        <td colspan="6">Weekday Amount</td>
+                      </tr>
+                      <tr>
+                        <td colspan="6">Mixed Days Amount </td>
+                      </tr>
+                      <tr>
+                        <td colspan="6">Mixed Days Amount </td>
+                      </tr>
+                      <tr>
+                        <td colspan="6">Weekday Amount</td>
+                      </tr>
+                      <tr>
+                        <td colspan="5">Discount </td>
+                        <td style="width:80px">
+                          <input class="form-control" type="text" name="" placeholder="%" id=""> </td>
+                      </tr>
+                      <tr class="bg-transparent">
+                        <td class="total-g" colspan="5">Total </td>
+                        <td class="total-a" style="width:80px"> $ 1497 </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+
+
+              </div>
+            </div>
+            <!-- Column -->
+          </div>
+          <div class="col-lg-3 pl-0">
+            <div class="card">
+
+
+              <div class="card-body">
+                <div class="row m-b-20">
+                  <div class="col-md-6">
+                    <div class="s-details">Service details</div>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn waves-effect waves-light btn-info add-btn">+ Add New Quote</button>
+                  </div>
+                </div>
+                <div class="accordion-right">
+                  <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <img class="p-r-10" src="assets/images/icon/icn_floor.png" alt=""> Cleaning floors
+                          </button>
+                        </h5>
+                      </div>
+
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs customtab acc-tab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-toggle="tab" href="#home2" role="tab">
+                                <span class="hidden-sm-up">
+                                  <i class="ti-home"></i>
+                                </span>
+                                <span class="hidden-xs-down">Select PPE</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#profile2" role="tab">
+                                <span class="hidden-sm-up">
+                                  <i class="ti-user"></i>
+                                </span>
+                                <span class="hidden-xs-down"> Tool Type</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#messages2" role="tab">
+                                <span class="hidden-sm-up">
+                                  <i class="ti-email"></i>
+                                </span>
+                                <span class="hidden-xs-down">Documents</span>
+                              </a>
+                            </li>
+                          </ul>
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="home2" role="tabpanel">
+                              <div class="p-0">
+                                <div class="chk-box">
+                                  <input type="checkbox" id="md_checkbox_1" class="filled-in chk-col-light-green" checked />
+                                  <label class="text-lable" for="md_checkbox_1">Dust Mask</label>
+                                </div>
+                                <div class="chk-box">
+                                  <input type="checkbox" id="md_checkbox_2" class="filled-in chk-col-light-green" checked />
+                                  <label class="text-lable" for="md_checkbox_2">Eye Protection</label>
+                                </div>
+                                <div class="chk-box">
+                                  <input type="checkbox" id="md_checkbox_3" class="filled-in chk-col-light-green" />
+                                  <label class="text-lable" for="md_checkbox_3">Face Protection</label>
+                                </div>
+                                <div class="chk-box">
+                                  <input type="checkbox" id="md_checkbox_31" class="filled-in chk-col-light-green" />
+                                  <label class="text-lable" for="md_checkbox_31">Hi Viz Clothing</label>
+                                </div>
+                                <div class="chk-box">
+                                  <input type="checkbox" id="md_checkbox_31" class="filled-in chk-col-light-green" />
+                                  <label class="text-lable" for="md_checkbox_31">Safty Gloves</label>
+                                </div>
+                                <div class="chk-box">
+                                  <input type="checkbox" id="md_checkbox_31" class="filled-in chk-col-light-green" />
+                                  <label class="text-lable" for="md_checkbox_31">Sun Screen</label>
+                                </div>
+                                <div class="chk-box">
+                                  <input type="checkbox" id="md_checkbox_31" class="filled-in chk-col-light-green" />
+                                  <label class="text-lable" for="md_checkbox_31">Water Proof Clothing</label>
+                                </div>
+                                <div class="chk-box">
+                                  <input type="checkbox" id="md_checkbox_31" class="filled-in chk-col-light-green" />
+                                  <label class="text-lable" for="md_checkbox_31">Work in Confindine Space</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane  p-20" id="profile2" role="tabpanel">2</div>
+                            <div class="tab-pane p-20" id="messages2" role="tabpanel">3</div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <img class="p-r-10" src="assets/images/icon/icn_gutter.png" alt=""> Gutter Cleaning
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <img class="p-r-10" src="assets/images/icon/icn_window.png" alt=""> Window Cleaning
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="card-body">
+                <hr>
+                <div class="row m-b-20">
+                  <div class="col-md-6">
+                    <div class="s-details">Service details</div>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn waves-effect waves-light btn-info add-btn">+ Add New Quote</button>
+                  </div>
+                </div>
+
+                <div class="row m-b-20">
+
+                  <div class="col-md-6 p-r-10">
+                    <div class="building-w">
+                      <div class="chk-box">
+                        <input type="checkbox" id="md_checkbox_b1" class="filled-in chk-col-light-green" checked />
+                        <label class="text-b" for="md_checkbox_b1">Safty Gloves</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-l-10">
+                    <div class="building-w">
+                      <div class="chk-box">
+                        <input type="checkbox" id="md_checkbox_b2" class="filled-in chk-col-light-green" checked />
+                        <label class="text-b" for="md_checkbox_b2">Safty Gloves</label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row m-b-20 ">
+
+                  <div class="col-md-6 p-r-10">
+                    <div class="building-w">
+                      <div class="chk-box">
+                        <input type="checkbox" id="md_checkbox_b3" class="filled-in chk-col-light-green" checked />
+                        <label class="text-b" for="md_checkbox_b3">Safty Gloves</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-l-10">
+                    <div class="building-w">
+                      <div class="chk-box">
+                        <input type="checkbox" id="md_checkbox_b4" class="filled-in chk-col-light-green" checked />
+                        <label class="text-b" for="md_checkbox_b4">Safty Gloves</label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+  
+      </div>
+  
+    </div>
+  
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="js/waves.js"></script>
+    <script src="js/sidebarmenu.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/jQuery-plugin-progressbar.js"></script>
+    <script>
+      $(".progress-bar1").loading();
+    </script>
+
+
+</body>
+
+</html>
